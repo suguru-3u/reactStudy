@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>React</title>
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+        <style>
+            #root{
+            cursor: pointer;
+            font-size: 20pt;
+            background-color:lightblue;
+            padding:1px 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>React</h1>
+        <div id="root">Wait..</div>
+        <script type="text/babel">
+            
+            let dom = document.querySelector('#root');
+
+            // let title = "新タイトル";
+            // let message = "新しいメッセージです";
+            // let link = "https://google.com"
+
+            // const msg = {
+            //     fontSize:"20pt",
+            //     fontWeight:"bold",
+            //     color:"red",
+            //     border:"2px solid green"
+            // }
+
+            // let printMsg = function(msg,size,color){
+            //     const style = {
+            //         fontSize: size + "",
+            //         fontWeight:"700",
+            //         color:"color",
+            //         border:"2px solid " + color
+            //     };
+            //     return <p style={style}>{msg}</p>
+            // }
+
+            // let element = (
+            //     <div>
+            //         {printMsg("1",30,'#ddd')}
+            //         {printMsg("2",20,'#aaa')}
+            //         {printMsg("3",10,'#333')}
+            //     </div>
+            // )
+
+            // let flg = false;
+
+            // let element = (
+            //     <div>
+            //         {flg ?
+            //             <p style={msg}>true</p> 
+            //         :
+            //             <p style={msg}>false</p> 
+            //         }    
+            //     </div>
+            // );
+
+            // let data = [
+            //     <li>1</li>,
+            //     <li>2</li>,
+            //     <li>3</li>
+            // ];
+
+            // let data = [
+            //     {name :'Ta',age:15},
+            //     {name :'Tar',age:15},
+            //     {name :'Taro',age:155}
+
+            // ];
+
+            // let element = (
+            //     <div>
+            //         <table>
+            //             <tr>
+            //                 <th>name</th>
+            //                 <th>age</th>
+            //             </tr>
+            //             {data.map((value) => (
+            //             <tr>
+            //                 <td>{value.name}</td>
+            //                 <td>{value.age}</td>
+            //             </tr>
+            //             ))}
+            //         </table>
+            //     </div>
+            // );
+
+            const p = {
+                fontSize:"20pt",
+                padding:"10px"
+            };
+
+            // let counter = 0;
+
+            // // setInterval(() => {
+            // //     counter++;
+            // //     let element = (
+            // //         <div>
+            // //             <p style={p}>count: {counter}</p>
+            // //         </div>
+            // //     );
+            // //      ReactDOM.render(element,dom);
+            // // },1000);
+
+            // let doAction = (e) => {
+            //     counter++;
+            //     let element = (
+            //         <div>
+            //             <p onClick={doAction} style={p}>count: {counter}</p>
+            //         </div>
+            //     );
+            //     ReactDOM.render(element,dom);
+            // }
+            // doAction();
+
+            const input = {
+                fontSize: "16pt",
+                padding: "5px 10"
+            }
+
+            let message = "お名前をどうぞ";
+            let in_val = "";
+
+            let doChange = (e) => {
+                in_val = e.target.value;
+                message = "こんにちわ" + in_val + "さん！";
+            };
+
+            let doAction = (e) => {
+                let element = (
+                    <div>
+                        <p style={p}>{message}</p>
+                        <div>
+                            <input type="text" id="input" style={input} 
+                                onChange={doChange} />
+                            <button onClick={doAction} style={input}>Click</button>
+                        </div>
+                    </div>
+                );
+                ReactDOM.render(element,dom);
+            }
+
+            doAction();
+        </script>
+    </body>
+</html>
