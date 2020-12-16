@@ -121,34 +121,60 @@
             // }
             // doAction();
 
-            const input = {
-                fontSize: "16pt",
-                padding: "5px 10"
-            }
+            // const input = {
+            //     fontSize: "16pt",
+            //     padding: "5px 10"
+            // }
 
-            let message = "お名前をどうぞ";
-            let in_val = "";
+            // let message = "お名前をどうぞ";
+            // let in_val = "";
 
-            let doChange = (e) => {
-                in_val = e.target.value;
-                message = "こんにちわ" + in_val + "さん！";
+            // let doChange = (e) => {
+            //     in_val = e.target.value;
+            //     message = "こんにちわ" + in_val + "さん！";
+            // };
+
+            // let doAction = (e) => {
+            //     let element = (
+            //         <div>
+            //             <p style={p}>{message}</p>
+            //             <div>
+            //                 <input type="text" id="input" style={input} 
+            //                     onChange={doChange} />
+            //                 <button onClick={doAction} style={input}>Click</button>
+            //             </div>
+            //         </div>
+            //     );
+            //     ReactDOM.render(element,dom);
+            // }
+
+            // doAction();
+
+            const msg = {
+                fontSize:"16pt",
+                fontWeight:"bold",
+                padding: "10px",
+                color:"white",
+                backgroundColor:"darkbule"
             };
 
-            let doAction = (e) => {
-                let element = (
-                    <div>
-                        <p style={p}>{message}</p>
-                        <div>
-                            <input type="text" id="input" style={input} 
-                                onChange={doChange} />
-                            <button onClick={doAction} style={input}>Click</button>
-                        </div>
-                    </div>
-                );
-                ReactDOM.render(element,dom);
+            function Calc(props){
+                let total = 0;
+                for(let i = 1 ; i <= props.number ; i ++){
+                    total += i;
+                }
+                return <p style={msg}>1から{props.number}の合計は「{total}です!」</p>
             }
 
-            doAction();
+            let element = (
+                <div>
+                    <Calc  number="100"/>
+                    <Calc  number="200"/>
+                </div>
+            )
+
+            ReactDOM.render(element,dom);
+
         </script>
     </body>
 </html>
