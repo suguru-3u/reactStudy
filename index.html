@@ -19,232 +19,234 @@
         <h1>React</h1>
         <div id="root">Wait..</div>
         <script type="text/babel">
+
             
-            let dom = document.querySelector('#root');
+            
+            // let dom = document.querySelector('#root');
 
-            // let title = "新タイトル";
-            // let message = "新しいメッセージです";
-            // let link = "https://google.com"
+            // // let title = "新タイトル";
+            // // let message = "新しいメッセージです";
+            // // let link = "https://google.com"
 
-            // const msg = {
-            //     fontSize:"20pt",
-            //     fontWeight:"bold",
-            //     color:"red",
-            //     border:"2px solid green"
-            // }
+            // // const msg = {
+            // //     fontSize:"20pt",
+            // //     fontWeight:"bold",
+            // //     color:"red",
+            // //     border:"2px solid green"
+            // // }
 
-            // let printMsg = function(msg,size,color){
-            //     const style = {
-            //         fontSize: size + "",
-            //         fontWeight:"700",
-            //         color:"color",
-            //         border:"2px solid " + color
-            //     };
-            //     return <p style={style}>{msg}</p>
-            // }
+            // // let printMsg = function(msg,size,color){
+            // //     const style = {
+            // //         fontSize: size + "",
+            // //         fontWeight:"700",
+            // //         color:"color",
+            // //         border:"2px solid " + color
+            // //     };
+            // //     return <p style={style}>{msg}</p>
+            // // }
 
-            // let element = (
-            //     <div>
-            //         {printMsg("1",30,'#ddd')}
-            //         {printMsg("2",20,'#aaa')}
-            //         {printMsg("3",10,'#333')}
-            //     </div>
-            // )
+            // // let element = (
+            // //     <div>
+            // //         {printMsg("1",30,'#ddd')}
+            // //         {printMsg("2",20,'#aaa')}
+            // //         {printMsg("3",10,'#333')}
+            // //     </div>
+            // // )
 
-            // let flg = false;
+            // // let flg = false;
 
-            // let element = (
-            //     <div>
-            //         {flg ?
-            //             <p style={msg}>true</p> 
-            //         :
-            //             <p style={msg}>false</p> 
-            //         }    
-            //     </div>
-            // );
+            // // let element = (
+            // //     <div>
+            // //         {flg ?
+            // //             <p style={msg}>true</p> 
+            // //         :
+            // //             <p style={msg}>false</p> 
+            // //         }    
+            // //     </div>
+            // // );
 
-            // let data = [
-            //     <li>1</li>,
-            //     <li>2</li>,
-            //     <li>3</li>
-            // ];
+            // // let data = [
+            // //     <li>1</li>,
+            // //     <li>2</li>,
+            // //     <li>3</li>
+            // // ];
 
-            // let data = [
-            //     {name :'Ta',age:15},
-            //     {name :'Tar',age:15},
-            //     {name :'Taro',age:155}
+            // // let data = [
+            // //     {name :'Ta',age:15},
+            // //     {name :'Tar',age:15},
+            // //     {name :'Taro',age:155}
 
-            // ];
+            // // ];
 
-            // let element = (
-            //     <div>
-            //         <table>
-            //             <tr>
-            //                 <th>name</th>
-            //                 <th>age</th>
-            //             </tr>
-            //             {data.map((value) => (
-            //             <tr>
-            //                 <td>{value.name}</td>
-            //                 <td>{value.age}</td>
-            //             </tr>
-            //             ))}
-            //         </table>
-            //     </div>
-            // );
+            // // let element = (
+            // //     <div>
+            // //         <table>
+            // //             <tr>
+            // //                 <th>name</th>
+            // //                 <th>age</th>
+            // //             </tr>
+            // //             {data.map((value) => (
+            // //             <tr>
+            // //                 <td>{value.name}</td>
+            // //                 <td>{value.age}</td>
+            // //             </tr>
+            // //             ))}
+            // //         </table>
+            // //     </div>
+            // // );
 
-            // const p = {
-            //     fontSize:"20pt",
-            //     padding:"10px"
-            // };
+            // // const p = {
+            // //     fontSize:"20pt",
+            // //     padding:"10px"
+            // // };
 
-            // let counter = 0;
+            // // let counter = 0;
 
-            // // setInterval(() => {
+            // // // setInterval(() => {
+            // // //     counter++;
+            // // //     let element = (
+            // // //         <div>
+            // // //             <p style={p}>count: {counter}</p>
+            // // //         </div>
+            // // //     );
+            // // //      ReactDOM.render(element,dom);
+            // // // },1000);
+
+            // // let doAction = (e) => {
             // //     counter++;
             // //     let element = (
             // //         <div>
-            // //             <p style={p}>count: {counter}</p>
+            // //             <p onClick={doAction} style={p}>count: {counter}</p>
             // //         </div>
             // //     );
-            // //      ReactDOM.render(element,dom);
-            // // },1000);
+            // //     ReactDOM.render(element,dom);
+            // // }
+            // // doAction();
 
-            // let doAction = (e) => {
-            //     counter++;
-            //     let element = (
-            //         <div>
-            //             <p onClick={doAction} style={p}>count: {counter}</p>
-            //         </div>
-            //     );
-            //     ReactDOM.render(element,dom);
-            // }
-            // doAction();
+            // // const input = {
+            // //     fontSize: "16pt",
+            // //     padding: "5px 10"
+            // // }
 
-            // const input = {
-            //     fontSize: "16pt",
-            //     padding: "5px 10"
-            // }
+            // // let message = "お名前をどうぞ";
+            // // let in_val = "";
 
-            // let message = "お名前をどうぞ";
-            // let in_val = "";
+            // // let doChange = (e) => {
+            // //     in_val = e.target.value;
+            // //     message = "こんにちわ" + in_val + "さん！";
+            // // };
 
-            // let doChange = (e) => {
-            //     in_val = e.target.value;
-            //     message = "こんにちわ" + in_val + "さん！";
-            // };
+            // // let doAction = (e) => {
+            // //     let element = (
+            // //         <div>
+            // //             <p style={p}>{message}</p>
+            // //             <div>
+            // //                 <input type="text" id="input" style={input} 
+            // //                     onChange={doChange} />
+            // //                 <button onClick={doAction} style={input}>Click</button>
+            // //             </div>
+            // //         </div>
+            // //     );
+            // //     ReactDOM.render(element,dom);
+            // // }
 
-            // let doAction = (e) => {
-            //     let element = (
-            //         <div>
-            //             <p style={p}>{message}</p>
-            //             <div>
-            //                 <input type="text" id="input" style={input} 
-            //                     onChange={doChange} />
-            //                 <button onClick={doAction} style={input}>Click</button>
-            //             </div>
-            //         </div>
-            //     );
-            //     ReactDOM.render(element,dom);
-            // }
+            // // doAction();
 
-            // doAction();
+            // // const msg = {
+            // //     fontSize:"16pt",
+            // //     fontWeight:"bold",
+            // //     padding: "10px",
+            // //     color:"white",
+            // //     backgroundColor:"darkbule"
+            // // };
 
-            // const msg = {
-            //     fontSize:"16pt",
-            //     fontWeight:"bold",
-            //     padding: "10px",
-            //     color:"white",
-            //     backgroundColor:"darkbule"
-            // };
+            // // function Calc(props){
+            // //     let total = 0;
+            // //     for(let i = 1 ; i <= props.number ; i ++){
+            // //         total += i;
+            // //     }
+            // //     return <p style={msg}>1から{props.number}の合計は「{total}です!」</p>
+            // // }
 
-            // function Calc(props){
-            //     let total = 0;
-            //     for(let i = 1 ; i <= props.number ; i ++){
-            //         total += i;
+            // // let element = (
+            // //     <div>
+            // //         <Calc  number="100"/>
+            // //         <Calc  number="200"/>
+            // //     </div>
+            // // )
+
+            //  // const msg = {
+            // //     fontSize:"16pt",
+            // //     fontWeight:"bold",
+            // //     padding: "10px",
+            // //     color:"white",
+            // //     backgroundColor:"darkbule"
+            // // };
+
+            // //  const msg = {
+            // //     fontSize:"20pt",
+            // //     fontWeight:"bold",
+            // //     padding: "10px",
+            // //     border:"solid 5px yellow"
+            // // };
+
+            // // class Hello extends React.Component{
+
+            // //     constructor(props){
+            // //         super(props);
+            // //     }
+
+
+            // //     render(){
+            // //         return <p style={msg}>Hello</p>
+            // //     }
+            // // }
+
+            // // let element = (
+            // //     <div>
+            // //         <Hello />
+            // //     </div>
+            // // );
+
+            // class React extends React.Component{
+            //     x = 0;
+            //     y = 0;
+            //     width = 0;
+            //     height = 0;
+            //     color = white;
+            //     style = {};
+
+            //     constructor(proos){
+            //         super(proos);
+            //         this.x = proos.x;
+            //         this.y = proos.y;   
+            //         this.width = proos.width;
+            //         this.height = proos.height;
+            //         this.color = proos.color;
+            //         this.style = {
+            //             backgroundColor:this.color,
+            //             position:"absolute",
+            //             left:this.x + "px",
+            //             top:this.y + "px",
+            //             width:this.width + "px",
+            //             height:this.height + "px",    
+            //         }
             //     }
-            //     return <p style={msg}>1から{props.number}の合計は「{total}です!」</p>
-            // }
-
-            // let element = (
-            //     <div>
-            //         <Calc  number="100"/>
-            //         <Calc  number="200"/>
-            //     </div>
-            // )
-
-             // const msg = {
-            //     fontSize:"16pt",
-            //     fontWeight:"bold",
-            //     padding: "10px",
-            //     color:"white",
-            //     backgroundColor:"darkbule"
-            // };
-
-            //  const msg = {
-            //     fontSize:"20pt",
-            //     fontWeight:"bold",
-            //     padding: "10px",
-            //     border:"solid 5px yellow"
-            // };
-
-            // class Hello extends React.Component{
-
-            //     constructor(props){
-            //         super(props);
-            //     }
-
 
             //     render(){
-            //         return <p style={msg}>Hello</p>
+            //         return <div style={this.style}></div>;
             //     }
             // }
 
             // let element = (
             //     <div>
-            //         <Hello />
+            //         <React x="100" y="100" width="100" height="100" color="cyan" />
+            //         <React x="150" y="150" w="100" h="100" c="magenta" />   
             //     </div>
             // );
 
-            class React extends React.Component{
-                x = 0;
-                y = 0;
-                width = 0;
-                height = 0;
-                color = white;
-                style = {};
 
-                constructor(proos){
-                    super(proos);
-                    this.x = proos.x;
-                    this.y = proos.y;   
-                    this.width = proos.width;
-                    this.height = proos.height;
-                    this.color = proos.color;
-                    this.style = {
-                        backgroundColor:this.color,
-                        position:"absolute",
-                        left:this.x + "px",
-                        top:this.y + "px",
-                        width:this.width + "px",
-                        height:this.height + "px",    
-                    }
-                }
-
-                render(){
-                    return <div style={this.style}></div>;
-                }
-            }
-
-            let element = (
-                <div>
-                    <React x="100" y="100" width="100" height="100" color="cyan" />
-                    <React x="150" y="150" w="100" h="100" c="magenta" />   
-                </div>
-            );
-
-
-            ReactDOM.render(element,dom);
+            // ReactDOM.render(element,dom);
 
         </script>
     </body>
