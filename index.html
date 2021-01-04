@@ -22,11 +22,20 @@
 
             // let counter = 0;
             let dom = document.querySelector('#root');
+
+            let title = 'HELLO'
+
+            let a = function doAction(){
+                title = 'こんにちわ';
+                number ++;
+                return <p>{title}</p>;
+            }
             
             let el = (
                 <div>
-                    <h2>Hello</h2>
+                    <h2>{title}</h2>
                     <p>This is sample</p>
+                    <button onClick = {a}>Japanise Langese</button>
                 </div>
             )
             
