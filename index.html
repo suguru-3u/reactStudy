@@ -22,24 +22,29 @@
 
             // let counter = 0;
             let dom = document.querySelector('#root');
-
+            let Langase = true;
             let title = 'HELLO'
 
             let a = function doAction(){
-                title = 'こんにちわ';
-                number ++;
-                return <p>{title}</p>;
+                let el = (
+                    <div>
+                        <h2>{title}</h2>
+                        <p>This is sample</p>
+                        <button onClick = {a}>Japanise Langese</button>
+                    </div>
+                );
+                
+                if(Langase){
+                    title = 'こんにちわ';
+                    Langase = false;
+                }else{
+                    title = 'Hello';
+                    Langase = true;
+                }
+                ReactDOM.render(el,dom)
             }
+            a();
             
-            let el = (
-                <div>
-                    <h2>{title}</h2>
-                    <p>This is sample</p>
-                    <button onClick = {a}>Japanise Langese</button>
-                </div>
-            )
-            
-            ReactDOM.render(el,dom)
         
 
 
